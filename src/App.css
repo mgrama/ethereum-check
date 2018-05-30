@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Container {
+  margin: 20px 20px;
+}
+
+.Tip {
+  min-height: 20px;
+  color: red;
+}
+
+.Popup  {
+  z-index: 10;
+  opacity: 1;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 100px);
+  background-color: lightgrey;
+  min-height: 100px;
+  min-width: 300px;
+  border-radius: 3px;
+  text-align: center;
+  transition: 0.5s opacity;
+}
+
+.Popup--button {
+  background-color: white;
+  min-height: 30px;
+  min-width: 50px;
+  padding: 5px;
+}
+
+.Popup__hidden {
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 100px);
+  background-color: lightgrey;
+  min-height: 100px;
+  min-width: 300px;
+  border-radius: 3px;
+  text-align: center;
+  transition: 0.5s opacity;
+  z-index: -10;
+  opacity: 0;
+}
+
+button {
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+
+td {
+  min-width: 100px;
+}
+
+th {
+  min-width: 100px;
+  text-align: left;
+}
